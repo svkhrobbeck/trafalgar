@@ -11,6 +11,11 @@
       font-size: 30px;
       line-height: 40px;
     }
+
+    @media (max-width: $mobile) {
+      font-size: 26px;
+      line-height: 37px;
+    }
   }
 
   .line {
@@ -27,6 +32,11 @@
     @media (max-width: $tablet-l) {
       font-size: 16px;
       line-height: 24px;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: 16px;
+      line-height: 22px;
     }
   }
 
@@ -65,6 +75,11 @@
 
         @media (max-width: $tablet) {
           text-align: center;
+        }
+
+        @media (max-width: $mobile) {
+          font-size: 18px;
+          line-height: 28px;
         }
       }
 

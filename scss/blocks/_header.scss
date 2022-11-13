@@ -71,6 +71,10 @@
         transition: 0.3s ease;
       }
 
+      @media (max-width: $mobile) {
+        width: 50%;
+      }
+
       .nav__link {
         text-decoration: none;
         color: $navbar-color;
@@ -81,6 +85,10 @@
           opacity: 1;
           font: 18px "Mulish";
           font-weight: 700;
+        }
+
+        @media (max-width: $mobile) {
+          font-size: 17px;
         }
       }
     }

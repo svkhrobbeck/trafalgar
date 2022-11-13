@@ -7,6 +7,11 @@
     border-radius: 24px;
     padding: 60px 120px 0;
 
+    @media (max-width: $mobile) {
+      height: auto;
+      padding: 40px 30px;
+    }
+
     .testimonials__title {
       font: 36px "Mulish";
       color: $white;
@@ -17,6 +22,11 @@
       @media (max-width: $tablet-l) {
         font-size: 30px;
         line-height: 40px;
+      }
+
+      @media (max-width: $tablet-l) {
+        font-size: 24px;
+        line-height: 35px;
       }
     }
 
@@ -40,11 +50,11 @@
         display: flex;
         align-items: center;
         gap: 37px;
-        
+
         @media (max-width: $tablet-l) {
           display: none;
         }
-        
+
         .customer-userpic {
           img {
             max-width: 133px;
@@ -52,14 +62,14 @@
             border-radius: 50%;
           }
         }
-        
+
         .customer-info__name {
           font: 22px "Mulish";
           font-weight: 700;
           line-height: 36px;
           color: $white;
         }
-        
+
         .customer-info__subtitle {
           font: 18px "Mulish";
           font-weight: 300;
@@ -68,15 +78,15 @@
           opacity: 0.85;
         }
       }
-      
+
       .customer-description {
         width: 45%;
-        
+
         @media (max-width: $tablet-l) {
-          width: auto;
+          width: 100%;
           text-align: center;
         }
-        
+          
         .customer-description__text {
           font: 19px "Mulish";
           font-weight: 300;
@@ -87,6 +97,11 @@
           @media (max-width: $tablet-l) {
             font-size: 18px;
             line-height: 24px;
+          }
+
+          @media (max-width: $tablet-l) {
+            font-size: 16px;
+            line-height: 20px;
           }
         }
       }
@@ -100,9 +115,25 @@
     justify-content: center;
     gap: 95px;
 
+    @media (max-width: $mobile) {
+      width: 90%;
+      gap: 0;
+      margin: 0 auto;
+      margin-top: 20px;
+      justify-content: space-between;
+    }
+
+    @media (max-width: 220px) {
+      display: none;
+    }
+
     .dots {
       display: flex;
       gap: 18px;
+
+      @media (max-width: $mobile) {
+        gap: 14px;
+      }
 
       .dot {
         display: inline-block;

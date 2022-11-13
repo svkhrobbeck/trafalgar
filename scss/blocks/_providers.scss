@@ -51,6 +51,11 @@
       @media (max-width: $tablet) {
         text-align: center;
       }
+
+      @media (max-width: $mobile) {
+        font-size: 25px;
+        line-height: 32px;
+      }
     }
 
     .line {
@@ -75,12 +80,17 @@
       @media (max-width: $tablet) {
         text-align: center;
       }
+
+      @media (max-width: $mobile) {
+        font-size: 16px;
+        line-height: 21px;
+      }
     }
 
     .providers-link {
       .providers__link {
         transition: 0.3s ease;
-        
+
         &:hover svg {
           color: $white;
         }

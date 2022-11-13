@@ -116,8 +116,12 @@ img {
     font-size: 17px;
     padding: 13px 51px;
   }
-
-  @media (max-width: $tablet-l) {
+  
+  @media (max-width: $tablet) {
     font-size: 15px;
+  }
+  
+  @media (max-width: $mobile) {
+    padding: 11px 40px;
   }
 }
