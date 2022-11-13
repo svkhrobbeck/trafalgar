@@ -1,0 +1,126 @@
+.testimonials {
+  .testimonials-card {
+    margin-top: 270px;
+    width: 100%;
+    height: 425px;
+    background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
+    border-radius: 24px;
+    padding: 60px 120px 0;
+
+    .testimonials__title {
+      font: 36px "Mulish";
+      color: $white;
+      text-align: center;
+      font-weight: 700;
+      line-height: 48px;
+
+      @media (max-width: $tablet-l) {
+        font-size: 30px;
+        line-height: 40px;
+      }
+    }
+
+    .line {
+      margin: 25px auto 0;
+      background-color: $white;
+    }
+
+    .customer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 75px;
+
+      @media (max-width: $tablet-l) {
+        justify-content: center;
+      }
+
+      .customer-user {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        gap: 37px;
+        
+        @media (max-width: $tablet-l) {
+          display: none;
+        }
+        
+        .customer-userpic {
+          img {
+            max-width: 133px;
+            outline: 4px solid $white;
+            border-radius: 50%;
+          }
+        }
+        
+        .customer-info__name {
+          font: 22px "Mulish";
+          font-weight: 700;
+          line-height: 36px;
+          color: $white;
+        }
+        
+        .customer-info__subtitle {
+          font: 18px "Mulish";
+          font-weight: 300;
+          line-height: 24px;
+          color: $white;
+          opacity: 0.85;
+        }
+      }
+      
+      .customer-description {
+        width: 45%;
+        
+        @media (max-width: $tablet-l) {
+          width: auto;
+          text-align: center;
+        }
+        
+        .customer-description__text {
+          font: 19px "Mulish";
+          font-weight: 300;
+          line-height: 30px;
+          color: $white;
+          opacity: 0.9;
+
+          @media (max-width: $tablet-l) {
+            font-size: 18px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+
+  .testimonials-carousel {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 95px;
+
+    .dots {
+      display: flex;
+      gap: 18px;
+
+      .dot {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: $link-color;
+        opacity: 0.3;
+        transition: 0.5s ease;
+
+        &:hover {
+          opacity: 1;
+        }
+
+        &:first-child {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

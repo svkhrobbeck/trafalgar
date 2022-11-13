@@ -1,0 +1,94 @@
+.services {
+  margin-top: 210px;
+
+  .services__title {
+    font: 36px "Mulish";
+    font-weight: 700;
+    line-height: 56px;
+    text-align: center;
+
+    @media (max-width: $tablet-l) {
+      font-size: 30px;
+      line-height: 40px;
+    }
+  }
+
+  .line {
+    margin: 26px auto 0;
+  }
+
+  .services__description {
+    font: 18px "Mulish";
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 33px;
+
+    @media (max-width: $tablet-l) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  .services-cards {
+    margin: 75px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+
+    .services-card {
+      max-width: 350px;
+      max-height: 350px;
+      padding: 55px 37px 43px;
+      background-color: $white;
+      box-shadow: 2px 2px 15px #0000003b;
+      border-radius: 20px;
+
+      @media (max-width: $tablet) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &__heading {
+        margin-top: 20px;
+        font: 24px "Mulish";
+        font-weight: 700;
+        line-height: 56px;
+        color: $black;
+
+        @media (max-width: $tablet-l) {
+          font-size: 20px;
+          line-height: 40px;
+        }
+
+        @media (max-width: $tablet) {
+          text-align: center;
+        }
+      }
+
+      &__text {
+        font: 16px "Mulish";
+        font-weight: 300;
+        line-height: 28px;
+        color: $text-color;
+
+        @media (max-width: $tablet-l) {
+          font-size: 15px;
+          line-height: 22px;
+        }
+
+        @media (max-width: $tablet) {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .services-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

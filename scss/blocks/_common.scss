@@ -1,0 +1,123 @@
+// Fonts
+@font-face {
+  font-family: "Mulish";
+  src: url("../../fonts/") format("woff2"),
+    url("../../fonts/Mulish-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mulish";
+  src: url("../../fonts/Mulish-Light.woff2") format("woff2"),
+    url("../../fonts/Mulish-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mulish";
+  src: url("../../fonts/Mulish-Medium.woff2") format("woff2"),
+    url("../../fonts/Mulish-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mulish";
+  src: url("../../fonts/Mulish-Regular.woff2") format("woff2"),
+    url("../../fonts/Mulish-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Common styles
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+}
+
+// Container
+.container {
+  max-width: $desktop;
+  margin: 0 auto;
+
+  @media (max-width: $tablet-l) {
+    max-width: $tablet-l;
+    padding: 0 30px;
+  }
+  @media (max-width: $tablet) {
+    max-width: $tablet;
+    padding: 0 30px;
+  }
+  @media (max-width: $mobile) {
+    max-width: $mobile;
+    padding: 0 10px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+.line {
+  width: 56px;
+  height: 2px;
+  background-color: $black;
+  display: block;
+}
+
+#primary-link {
+  background: transparent;
+  border: 1px solid $link-color;
+  padding: 15px 50px;
+  border-radius: 55px;
+  font: 18px "Mulish";
+  font-weight: 700;
+  color: $link-color;
+  vertical-align: middle;
+
+  text-decoration: none;
+  transition: .3s ease;
+
+  &:hover {
+    background-color: $link-color;
+    color: $white;
+  }
+
+  @media (max-width: $tablet-l) {
+    font-size: 17px;
+    padding: 13px 51px;
+  }
+
+  @media (max-width: $tablet-l) {
+    font-size: 15px;
+  }
+}

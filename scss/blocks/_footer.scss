@@ -1,0 +1,76 @@
+.main-footer {
+  margin-top: 200px;
+  padding: 90px 0 120px;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+
+  .footer-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      align-self: center;
+      gap: 100px;
+    }
+
+    .copyright {
+      width: 30%;
+
+      @media (max-width: $tablet) {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .copyright__text {
+        font: 18px "Mulish";
+        color: $white;
+        margin-top: 20px;
+        font-weight: 300;
+        line-height: 28px;
+
+        &:last-child {
+          font-size: 16px;
+        }
+
+        @media (max-width: $tablet) {
+          text-align: center;
+        }
+      }
+    }
+
+    .footer-nav {
+      width: 60%;
+      display: flex;
+      justify-content: space-between;
+
+      @media (max-width: $tablet) {
+        width: 100%;
+      }
+
+      .footer-nav__list {
+        list-style-type: none;
+
+        .footer-nav__heading {
+          font: 20px "Mulish";
+          color: $white;
+          font-weight: 700;
+          line-height: 60px;
+        }
+
+        .footer-nav__link {
+          text-decoration: none;
+          font: 18px "Mulish";
+          color: $white;
+          font-weight: 300;
+          line-height: 38px;
+        }
+      }
+    }
+  }
+}
