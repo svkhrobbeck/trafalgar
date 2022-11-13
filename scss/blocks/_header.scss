@@ -17,6 +17,11 @@
       justify-content: center;
     }
 
+    .logo {
+      position: relative;
+      z-index: 101;
+    }
+
     #hamburger {
       @media (max-width: $tablet) {
         &:checked ~ .nav .nav__list {

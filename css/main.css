@@ -143,6 +143,10 @@ img {
     justify-content: center;
   }
 }
+.main-header .header-block .logo {
+  position: relative;
+  z-index: 101;
+}
 @media (max-width: 768px) {
   .main-header .header-block #hamburger:checked ~ .nav .nav__list {
     transform: translateX(0);
