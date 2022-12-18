@@ -41,26 +41,10 @@ body {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1240px;
+  width: 100%;
   margin: 0 auto;
-}
-@media (max-width: 992px) {
-  .container {
-    max-width: 992px;
-    padding: 0 30px;
-  }
-}
-@media (max-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding: 0 30px;
-  }
-}
-@media (max-width: 576px) {
-  .container {
-    max-width: 576px;
-    padding: 0 10px;
-  }
+  padding: 0 20px;
 }
 
 .visually-hidden {
@@ -98,7 +82,7 @@ img {
   color: #458ff6;
   vertical-align: middle;
   text-decoration: none;
-  transition: 0.3s ease;
+  transition: background-color 0.4s ease, color 0.4s ease, font-size 0.4s ease, padding 0.4s ease;
 }
 #primary-link:hover {
   background-color: #458ff6;
@@ -192,7 +176,7 @@ img {
     left: 0;
     transform: translateX(-100%);
     padding: 55px 0 0 20px;
-    transition: 0.3s ease;
+    transition: transform 0.3s ease;
   }
 }
 @media (max-width: 576px) {
@@ -218,7 +202,7 @@ img {
 }
 
 .about {
-  margin-top: 10px;
+  padding-top: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -248,46 +232,47 @@ img {
 .about .about-content .about__title {
   font: 48px "Mulish";
   font-weight: 700;
-  line-height: 56px;
+  line-height: 1.2;
   color: #000000;
+  transition: font-size 0.4s ease;
+  margin-bottom: 25px;
 }
 @media (max-width: 992px) {
   .about .about-content .about__title {
     font-size: 36px;
-    line-height: 40px;
+    margin-bottom: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .about .about-content .about__title {
+    margin-bottom: 16px;
   }
 }
 @media (max-width: 576px) {
   .about .about-content .about__title {
     font-size: 26px;
-    line-height: 35px;
   }
 }
 .about .about-content .about__description {
   font: 21px "Mulish";
   font-weight: 300;
-  line-height: 32px;
+  line-height: 1.5;
   color: #7d7987;
   margin-bottom: 45px;
-  margin-top: 25px;
 }
 @media (max-width: 992px) {
   .about .about-content .about__description {
     font-size: 16px;
-    line-height: 24px;
-    margin-top: 18px;
   }
 }
 @media (max-width: 768px) {
   .about .about-content .about__description {
-    margin-top: 16px;
     margin-bottom: 30px;
   }
 }
 @media (max-width: 576px) {
   .about .about-content .about__description {
     font-size: 15px;
-    line-height: 21px;
   }
 }
 .about .about-content .about__link {
@@ -299,7 +284,7 @@ img {
   font-weight: 700;
   color: #ffffff;
   text-decoration: none;
-  transition: 0.3s ease;
+  transition: background-color 0.3s ease, color 0.4s ease, font-size 0.4s ease;
 }
 .about .about-content .about__link:hover {
   background-color: transparent;
@@ -336,50 +321,47 @@ img {
 }
 
 .services {
-  margin-top: 210px;
+  padding-top: 210px;
 }
 .services .services__title {
   font: 36px "Mulish";
   font-weight: 700;
-  line-height: 56px;
+  line-height: 1.2;
   text-align: center;
+  margin-bottom: 26px;
+  transition: font-size 0.4s ease;
 }
 @media (max-width: 992px) {
   .services .services__title {
     font-size: 30px;
-    line-height: 40px;
   }
 }
 @media (max-width: 576px) {
   .services .services__title {
     font-size: 26px;
-    line-height: 37px;
   }
 }
 .services .line {
-  margin: 26px auto 0;
+  margin: 0 auto 33px;
 }
 .services .services__description {
   font: 18px "Mulish";
   font-weight: 300;
-  line-height: 30px;
+  line-height: 1.5;
   text-align: center;
-  margin-top: 33px;
 }
 @media (max-width: 992px) {
   .services .services__description {
     font-size: 16px;
-    line-height: 24px;
   }
 }
 @media (max-width: 576px) {
   .services .services__description {
     font-size: 16px;
-    line-height: 22px;
   }
 }
 .services .services-cards {
-  margin: 75px 0;
+  padding: 75px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -400,17 +382,19 @@ img {
     align-items: center;
   }
 }
+.services .services-cards .services-card__icon {
+  margin-bottom: 20px;
+}
 .services .services-cards .services-card__heading {
-  margin-top: 20px;
   font: 24px "Mulish";
   font-weight: 700;
-  line-height: 56px;
+  line-height: 2;
   color: #000000;
+  margin-bottom: 10px;
 }
 @media (max-width: 992px) {
   .services .services-cards .services-card__heading {
     font-size: 20px;
-    line-height: 40px;
   }
 }
 @media (max-width: 768px) {
@@ -421,19 +405,17 @@ img {
 @media (max-width: 576px) {
   .services .services-cards .services-card__heading {
     font-size: 18px;
-    line-height: 28px;
   }
 }
 .services .services-cards .services-card__text {
   font: 16px "Mulish";
   font-weight: 300;
-  line-height: 28px;
+  line-height: 1.5;
   color: #7d7987;
 }
 @media (max-width: 992px) {
   .services .services-cards .services-card__text {
     font-size: 15px;
-    line-height: 22px;
   }
 }
 @media (max-width: 768px) {
@@ -448,7 +430,7 @@ img {
 }
 
 .providers {
-  margin-top: 160px;
+  padding-top: 160px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -488,44 +470,40 @@ img {
 .providers .providers-content .providers__title {
   font: 36px "Mulish";
   font-weight: 700;
-  line-height: 56px;
+  line-height: 1.2;
   color: #000000;
+  margin-bottom: 26px;
 }
 @media (max-width: 992px) {
   .providers .providers-content .providers__title {
     font-size: 30px;
-    line-height: 40px;
   }
 }
 @media (max-width: 768px) {
   .providers .providers-content .providers__title {
     text-align: center;
+    margin-bottom: 22px;
   }
 }
 @media (max-width: 576px) {
   .providers .providers-content .providers__title {
     font-size: 25px;
-    line-height: 32px;
   }
-}
-.providers .providers-content .line {
-  margin-top: 26px;
 }
 @media (max-width: 768px) {
   .providers .providers-content .line {
-    margin: 22px auto 0;
+    margin: 0 auto;
   }
 }
 .providers .providers-content .providers__description {
   font: 18px "Mulish";
   font-weight: 300;
   margin: 30px 0 37px;
-  line-height: 30px;
+  line-height: 1.2;
 }
 @media (max-width: 992px) {
   .providers .providers-content .providers__description {
     font-size: 17px;
-    line-height: 25px;
   }
 }
 @media (max-width: 768px) {
@@ -536,11 +514,10 @@ img {
 @media (max-width: 576px) {
   .providers .providers-content .providers__description {
     font-size: 16px;
-    line-height: 21px;
   }
 }
 .providers .providers-content .providers-link .providers__link {
-  transition: 0.3s ease;
+  transition: color 0.3s ease;
 }
 .providers .providers-content .providers-link .providers__link:hover svg {
   color: #ffffff;
@@ -552,13 +529,16 @@ img {
   }
 }
 
+.testimonials {
+  padding-top: 270px;
+}
 .testimonials .testimonials-card {
-  margin-top: 270px;
   width: 100%;
   height: 425px;
   background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
   border-radius: 24px;
   padding: 60px 120px 0;
+  transition: padding 0.4s ease;
 }
 @media (max-width: 576px) {
   .testimonials .testimonials-card {
@@ -571,29 +551,29 @@ img {
   color: #ffffff;
   text-align: center;
   font-weight: 700;
-  line-height: 48px;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  transition: font-size 0.4s ease;
 }
 @media (max-width: 992px) {
   .testimonials .testimonials-card .testimonials__title {
     font-size: 30px;
-    line-height: 40px;
   }
 }
 @media (max-width: 992px) {
   .testimonials .testimonials-card .testimonials__title {
     font-size: 24px;
-    line-height: 35px;
   }
 }
 .testimonials .testimonials-card .line {
-  margin: 25px auto 0;
+  margin: 0 auto;
   background-color: #ffffff;
+  margin-bottom: 75px;
 }
 .testimonials .testimonials-card .customer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 75px;
 }
 @media (max-width: 992px) {
   .testimonials .testimonials-card .customer {
@@ -619,18 +599,19 @@ img {
 .testimonials .testimonials-card .customer .customer-user .customer-info__name {
   font: 22px "Mulish";
   font-weight: 700;
-  line-height: 36px;
+  line-height: 1.5;
   color: #ffffff;
 }
 .testimonials .testimonials-card .customer .customer-user .customer-info__subtitle {
   font: 18px "Mulish";
   font-weight: 300;
-  line-height: 24px;
+  line-height: 1.2;
   color: #ffffff;
   opacity: 0.85;
 }
 .testimonials .testimonials-card .customer .customer-description {
   width: 45%;
+  transition: width 0.4s ease;
 }
 @media (max-width: 992px) {
   .testimonials .testimonials-card .customer .customer-description {
@@ -641,24 +622,23 @@ img {
 .testimonials .testimonials-card .customer .customer-description .customer-description__text {
   font: 19px "Mulish";
   font-weight: 300;
-  line-height: 30px;
+  line-height: 1.5;
   color: #ffffff;
   opacity: 0.9;
+  transition: font-size 0.4s ease;
 }
 @media (max-width: 992px) {
   .testimonials .testimonials-card .customer .customer-description .customer-description__text {
     font-size: 18px;
-    line-height: 24px;
   }
 }
 @media (max-width: 992px) {
   .testimonials .testimonials-card .customer .customer-description .customer-description__text {
     font-size: 16px;
-    line-height: 20px;
   }
 }
 .testimonials .testimonials-carousel {
-  margin-top: 40px;
+  padding-top: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -669,7 +649,7 @@ img {
     width: 90%;
     gap: 0;
     margin: 0 auto;
-    margin-top: 20px;
+    padding-top: 20px;
     justify-content: space-between;
   }
 }
@@ -694,7 +674,7 @@ img {
   border-radius: 50%;
   background-color: #458ff6;
   opacity: 0.3;
-  transition: 0.5s ease;
+  transition: opacity 0.5s ease;
 }
 .testimonials .testimonials-carousel .dots .dot:hover {
   opacity: 1;
@@ -704,28 +684,29 @@ img {
 }
 
 .blog {
-  margin-top: 220px;
+  padding: 200px 0;
 }
 .blog .blog__title {
   font: 36px "Mulish";
   font-weight: 700;
-  line-height: 56px;
+  line-height: 1.2;
   text-align: center;
+  margin-bottom: 26px;
+  transition: font-size 0.4s ease;
 }
 @media (max-width: 992px) {
   .blog .blog__title {
     font-size: 30px;
-    line-height: 40px;
   }
 }
 .blog .line {
-  margin: 26px auto 0;
+  margin: 0 auto 100px;
 }
 .blog .blog-cards {
-  margin-top: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 75px;
   flex-wrap: wrap;
   gap: 35px;
 }
@@ -741,6 +722,7 @@ img {
 }
 .blog .blog-cards .blog-card .blog-card-content {
   padding: 15px 66px 30px 33px;
+  transition: padding 0.4s ease;
 }
 @media (max-width: 768px) {
   .blog .blog-cards .blog-card .blog-card-content {
@@ -750,12 +732,12 @@ img {
 .blog .blog-cards .blog-card .blog-card-content .blog-card__heading {
   font: 21px "Mulish";
   font-weight: 700;
-  line-height: 32px;
+  line-height: 1.2;
+  transition: font-size 0.4s ease;
 }
 @media (max-width: 992px) {
   .blog .blog-cards .blog-card .blog-card-content .blog-card__heading {
     font-size: 18px;
-    line-height: 24px;
   }
 }
 @media (max-width: 768px) {
@@ -767,13 +749,12 @@ img {
   margin-top: 12px;
   font: 16px "Mulish";
   font-weight: 300;
-  line-height: 28px;
+  line-height: 1.5;
   margin-bottom: 25px;
 }
 @media (max-width: 992px) {
   .blog .blog-cards .blog-card .blog-card-content .blog-card__text {
     font-size: 15px;
-    line-height: 22px;
     margin-bottom: 16px;
   }
 }
@@ -786,13 +767,12 @@ img {
   text-decoration: none;
   font: 17px "Mulish";
   font-weight: 600;
-  line-height: 28px;
+  line-height: 1.5;
   color: #458ff6;
 }
 @media (max-width: 992px) {
   .blog .blog-cards .blog-card .blog-card-content .blog-card-link .blog-card__link {
     font-size: 16px;
-    line-height: 22px;
   }
 }
 @media (max-width: 768px) {
@@ -802,14 +782,12 @@ img {
   }
 }
 .blog .blog-link {
-  margin-top: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .main-footer {
-  margin-top: 200px;
   padding: 90px 0 120px;
   width: 100%;
   height: auto;
@@ -844,7 +822,7 @@ img {
   color: #ffffff;
   margin-top: 20px;
   font-weight: 300;
-  line-height: 28px;
+  line-height: 1.2;
 }
 .main-footer .footer-block .copyright .copyright__text:last-child {
   font-size: 16px;
@@ -883,7 +861,7 @@ img {
   font: 20px "Mulish";
   color: #ffffff;
   font-weight: 700;
-  line-height: 60px;
+  line-height: 3;
 }
 @media (max-width: 576px) {
   .main-footer .footer-block .footer-nav .footer-nav__list .footer-nav__heading {
@@ -895,5 +873,5 @@ img {
   font: 18px "Mulish";
   color: #ffffff;
   font-weight: 300;
-  line-height: 38px;
+  line-height: 2;
 }/*# sourceMappingURL=main.css.map */

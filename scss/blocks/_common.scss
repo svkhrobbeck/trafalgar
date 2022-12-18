@@ -53,20 +53,9 @@ body {
 // Container
 .container {
   max-width: $desktop;
+  width: 100%;
   margin: 0 auto;
-
-  @media (max-width: $tablet-l) {
-    max-width: $tablet-l;
-    padding: 0 30px;
-  }
-  @media (max-width: $tablet) {
-    max-width: $tablet;
-    padding: 0 30px;
-  }
-  @media (max-width: $mobile) {
-    max-width: $mobile;
-    padding: 0 10px;
-  }
+  padding: 0 20px;
 }
 
 .visually-hidden {
@@ -76,7 +65,6 @@ body {
   margin: -1px;
   border: 0;
   padding: 0;
-  
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -105,7 +93,8 @@ img {
   vertical-align: middle;
 
   text-decoration: none;
-  transition: .3s ease;
+  transition: background-color 0.4s ease, color 0.4s ease, font-size 0.4s ease,
+    padding 0.4s ease;
 
   &:hover {
     background-color: $link-color;
@@ -116,11 +105,11 @@ img {
     font-size: 17px;
     padding: 13px 51px;
   }
-  
+
   @media (max-width: $tablet) {
     font-size: 15px;
   }
-  
+
   @media (max-width: $mobile) {
     padding: 11px 40px;
   }

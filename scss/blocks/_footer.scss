@@ -1,5 +1,4 @@
 .main-footer {
-  margin-top: 200px;
   padding: 90px 0 120px;
   width: 100%;
   height: auto;
@@ -32,7 +31,7 @@
         color: $white;
         margin-top: 20px;
         font-weight: 300;
-        line-height: 28px;
+        line-height: 1.2;
 
         &:last-child {
           font-size: 16px;
@@ -72,7 +71,7 @@
           font: 20px "Mulish";
           color: $white;
           font-weight: 700;
-          line-height: 60px;
+          line-height: 3;
 
           @media (max-width: $mobile) {
             text-align: center;
@@ -84,7 +83,7 @@
           font: 18px "Mulish";
           color: $white;
           font-weight: 300;
-          line-height: 38px;
+          line-height: 2;
         }
       }
     }

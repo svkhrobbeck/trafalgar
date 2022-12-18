@@ -1,11 +1,13 @@
 .testimonials {
+  padding-top: 270px;
+
   .testimonials-card {
-    margin-top: 270px;
     width: 100%;
     height: 425px;
     background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
     border-radius: 24px;
     padding: 60px 120px 0;
+    transition: padding 0.4s ease;
 
     @media (max-width: $mobile) {
       height: auto;
@@ -17,29 +19,29 @@
       color: $white;
       text-align: center;
       font-weight: 700;
-      line-height: 48px;
+      line-height: 1.2;
+      margin-bottom: 25px;
+      transition: font-size 0.4s ease;
 
       @media (max-width: $tablet-l) {
         font-size: 30px;
-        line-height: 40px;
       }
 
       @media (max-width: $tablet-l) {
         font-size: 24px;
-        line-height: 35px;
       }
     }
 
     .line {
-      margin: 25px auto 0;
+      margin: 0 auto;
       background-color: $white;
+      margin-bottom: 75px;
     }
 
     .customer {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-top: 75px;
 
       @media (max-width: $tablet-l) {
         justify-content: center;
@@ -66,14 +68,14 @@
         .customer-info__name {
           font: 22px "Mulish";
           font-weight: 700;
-          line-height: 36px;
+          line-height: 1.5;
           color: $white;
         }
 
         .customer-info__subtitle {
           font: 18px "Mulish";
           font-weight: 300;
-          line-height: 24px;
+          line-height: 1.2;
           color: $white;
           opacity: 0.85;
         }
@@ -81,27 +83,27 @@
 
       .customer-description {
         width: 45%;
+        transition: width 0.4s ease;
 
         @media (max-width: $tablet-l) {
           width: 100%;
           text-align: center;
         }
-          
+
         .customer-description__text {
           font: 19px "Mulish";
           font-weight: 300;
-          line-height: 30px;
+          line-height: 1.5;
           color: $white;
           opacity: 0.9;
+          transition: font-size 0.4s ease;
 
           @media (max-width: $tablet-l) {
             font-size: 18px;
-            line-height: 24px;
           }
 
           @media (max-width: $tablet-l) {
             font-size: 16px;
-            line-height: 20px;
           }
         }
       }
@@ -109,7 +111,7 @@
   }
 
   .testimonials-carousel {
-    margin-top: 40px;
+    padding-top: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,7 +121,7 @@
       width: 90%;
       gap: 0;
       margin: 0 auto;
-      margin-top: 20px;
+      padding-top: 20px;
       justify-content: space-between;
     }
 
@@ -142,7 +144,7 @@
         border-radius: 50%;
         background-color: $link-color;
         opacity: 0.3;
-        transition: 0.5s ease;
+        transition: opacity 0.5s ease;
 
         &:hover {
           opacity: 1;

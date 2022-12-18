@@ -1,5 +1,5 @@
 .providers {
-  margin-top: 160px;
+  padding-top: 160px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,29 +40,27 @@
     .providers__title {
       font: 36px "Mulish";
       font-weight: 700;
-      line-height: 56px;
+      line-height: 1.2;
       color: $black;
+      margin-bottom: 26px;
 
       @media (max-width: $tablet-l) {
         font-size: 30px;
-        line-height: 40px;
       }
 
       @media (max-width: $tablet) {
         text-align: center;
+        margin-bottom: 22px;
       }
 
       @media (max-width: $mobile) {
         font-size: 25px;
-        line-height: 32px;
       }
     }
 
     .line {
-      margin-top: 26px;
-
       @media (max-width: $tablet) {
-        margin: 22px auto 0;
+        margin: 0 auto;
       }
     }
 
@@ -70,11 +68,10 @@
       font: 18px "Mulish";
       font-weight: 300;
       margin: 30px 0 37px;
-      line-height: 30px;
+      line-height: 1.2;
 
       @media (max-width: $tablet-l) {
         font-size: 17px;
-        line-height: 25px;
       }
 
       @media (max-width: $tablet) {
@@ -83,13 +80,12 @@
 
       @media (max-width: $mobile) {
         font-size: 16px;
-        line-height: 21px;
       }
     }
 
     .providers-link {
       .providers__link {
-        transition: 0.3s ease;
+        transition: color 0.3s ease;
 
         &:hover svg {
           color: $white;
