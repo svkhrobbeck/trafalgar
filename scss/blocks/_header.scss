@@ -1,3 +1,4 @@
+/* MAIN HEADER */
 .main-header {
   position: sticky;
   top: 0;
@@ -8,7 +9,7 @@
     position: static;
   }
 
-  .header-block {
+  .header__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -16,54 +17,55 @@
     @media (max-width: $tablet) {
       justify-content: center;
     }
+  }
 
-    .logo {
-      position: relative;
-      z-index: 101;
-    }
-
-    #hamburger {
-      @media (max-width: $tablet) {
-        &:checked ~ .nav .nav__list {
-          transform: translateX(0);
-        }
-
-        &:checked + .hamburger #menu {
-          display: none;
-        }
-
-        &:checked + .hamburger #close {
-          display: block;
-        }
+  #hamburger {
+    @media (max-width: $tablet) {
+      &:checked ~ .nav .nav__list {
+        transform: translateX(0);
       }
-    }
 
-    #menu,
-    #close {
-      position: fixed;
-      font-size: 40px;
-      top: 20px;
-      left: 10px;
-      display: none;
-      z-index: 101;
-      background-color: $white;
-      border-radius: 5px;
-    }
+      &:checked + .hamburger #menu {
+        display: none;
+      }
 
-    #menu {
-      @media (max-width: $tablet) {
+      &:checked + .hamburger #close {
         display: block;
       }
     }
+  }
 
-    .nav__list {
+  #menu,
+  #close {
+    position: fixed;
+    font-size: 40px;
+    top: 20px;
+    left: 10px;
+    display: none;
+    z-index: 101;
+    background-color: $white;
+    border-radius: 5px;
+  }
+
+  &-logo__img {
+    width: 160px;
+    height: 41px;
+  }
+
+  #menu {
+    @media (max-width: $tablet) {
+      display: block;
+    }
+  }
+
+  /* SITENAV */
+  .nav {
+    &__list {
       display: flex;
-      gap: 40px;
       list-style-type: none;
 
       @media (max-width: $tablet) {
         flex-direction: column;
-        gap: 10px;
         background-color: $white;
         width: 35%;
         height: 100vh;
@@ -79,22 +81,32 @@
       @media (max-width: $mobile) {
         width: 50%;
       }
+    }
 
-      .nav__link {
-        text-decoration: none;
-        color: $navbar-color;
-        opacity: 0.5;
+    &__item {
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+
+      @media (max-width: $tablet) {
+        margin: 5px 0;
+      }
+    }
+
+    &__link {
+      text-decoration: none;
+      color: $navbar-color;
+      opacity: 0.5;
+      font: 18px "Mulish";
+
+      &.nav__link--checked {
+        opacity: 1;
         font: 18px "Mulish";
+        font-weight: 700;
+      }
 
-        &.nav__link--checked {
-          opacity: 1;
-          font: 18px "Mulish";
-          font-weight: 700;
-        }
-
-        @media (max-width: $mobile) {
-          font-size: 17px;
-        }
+      @media (max-width: $mobile) {
+        font-size: 17px;
       }
     }
   }

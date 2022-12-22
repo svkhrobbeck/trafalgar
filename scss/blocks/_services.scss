@@ -1,3 +1,4 @@
+/* SERVICES SECTION */
 .services {
   padding-top: 210px;
 
@@ -42,7 +43,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 35px;
+    margin-bottom: -35px;
 
     .services-card {
       max-width: 350px;
@@ -51,6 +52,15 @@
       background-color: $white;
       box-shadow: 2px 2px 15px #0000003b;
       border-radius: 20px;
+      margin-bottom: 35px;
+
+      &:not(:nth-child(3n)) {
+        margin-right: 35px;
+
+        @media only screen and (max-width: $tablet) {
+          margin-right: 0;
+        }
+      }
 
       @media (max-width: $tablet) {
         display: flex;

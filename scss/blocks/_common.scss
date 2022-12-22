@@ -1,63 +1,29 @@
-// Fonts
-@font-face {
-  font-family: "Mulish";
-  src: url("../../fonts/") format("woff2"),
-    url("../../fonts/Mulish-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Mulish";
-  src: url("../../fonts/Mulish-Light.woff2") format("woff2"),
-    url("../../fonts/Mulish-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Mulish";
-  src: url("../../fonts/Mulish-Medium.woff2") format("woff2"),
-    url("../../fonts/Mulish-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Mulish";
-  src: url("../../fonts/Mulish-Regular.woff2") format("woff2"),
-    url("../../fonts/Mulish-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-// Common styles
+/* GLOBAL STYLES */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* HTML */
 html {
   scroll-behavior: smooth;
 }
 
+/* BODY */
 body {
   font-family: "Mulish", sans-serif;
 }
 
-// Container
+/* CONTAINER */
 .container {
-  max-width: $desktop;
   width: 100%;
+  max-width: $desktop;
   margin: 0 auto;
   padding: 0 20px;
 }
 
+/* VISUALLY HIDDEN */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -71,10 +37,12 @@ body {
   overflow: hidden;
 }
 
+/* IMAGE */
 img {
   max-width: 100%;
 }
 
+/* IMAGE */
 .line {
   width: 56px;
   height: 2px;
@@ -82,6 +50,7 @@ img {
   display: block;
 }
 
+/* BUTTON */
 #primary-link {
   background: transparent;
   border: 1px solid $link-color;
